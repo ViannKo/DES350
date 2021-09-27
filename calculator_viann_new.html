@@ -1,0 +1,322 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Calculator</title>
+	
+		
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sigmar+One&display=swap" rel="stylesheet">
+
+</head>
+
+	 
+	<style>
+	
+body{
+	background-color: #ADDEE0;
+	padding-top: 50px;
+	}
+	
+#myCalculator{
+	background-color: #ADDEE0;
+	width: 900px;
+	height: 500px;
+	border-radius: 0px;
+	float: right;
+	margin-right: -7px;
+	}	
+	
+#display{
+	width: 600px;
+	border-radius: 0px;
+	text-align: right;
+	padding-right: 15px;
+	background: none;
+	font-family: 'Sigmar One', cursive;
+	float: right;
+	margin-top: -90px;
+	margin-left: 270px;
+	font-size: 60px;
+	height: 80px;
+	color: #eb3e97;
+}
+
+input{
+	display: inline-block;
+	width: 180px;
+	height: 100px;
+	margin-left: -5px;
+	color: #000;
+	background-color: #fff;
+	outline: none;
+	font-size: 25px;
+	border-radius: 0px;
+	border-style: none;
+	text-align: center;
+	border-radius: 0px;
+	font-family: 'Sigmar One', cursive;
+}
+
+input:hover{
+	background-color: #eb3e97;
+	color: white;
+}
+	
+	
+.inputRow{
+	margin-left: 10px;
+	border-radius: 0px;
+	font-family: 'Sigmar One', cursive;
+}
+		
+		
+.inputColumn{
+	width: 180px;
+	float: left;
+	height: 500px;
+	font-family: 'Sigmar One', cursive;
+}		
+		
+	
+.clear{
+	background-color: white;
+	color: #eb3e97;
+	height: 100px;
+}
+		
+.three{
+	background-color: #f399c0;
+	color: #eb3e97;
+	height: 60px;
+	display: inline-block;
+}
+		
+		
+.six{
+	background-color: #fde28d;
+	color: #eb3e97;
+	height: 140px;
+	display: inline-block;
+}
+		
+.nine{
+    background-color:#fffff;
+    color: #eb3e97;
+	height: 100px;
+	display: inline-block;
+}
+	
+	
+.inputRow{
+	margin-left: 10px;
+	border-radius: 0px;
+	font-family: 'Sigmar One', cursive;
+}		
+		
+.zero{
+	background-color: #fde28d;
+	color: #eb3e97;
+	height: 75px;
+	display: inline-block;
+}
+
+.two{
+	background-color:#65CEF6;
+	color:#eb3e97;
+	height:150px;
+    display: inline-block;
+}
+	
+.five{
+	background-color:#ADDEE0;
+	color:#eb3e97;
+	height:115px;
+	display: inline-block;
+
+}	
+
+.eight{
+	background-color:#65CEF6;
+	color:#eb3e97;
+	height:60px;
+	display:inline-block;
+}
+
+.decimal{
+	background-color: #f399c0;
+	color: #eb3e97;
+	height:80px;
+	display:inline-block;
+	
+}		
+		
+.one{
+	background-color:#fff;
+	color:#eb3e97;
+	height:100px;
+	display:inline-block;
+}	
+
+.four{
+	background-color:#f399c0;
+	color:#eb3e97;
+	height:70px;
+	display:inline-block;
+}
+
+.seven{
+	background-color:#fde28d;
+	color:#eb3e97;
+	height:150px;
+	display:inline-block;
+}
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+.operator{
+		background-color: #ADDEE0;
+	-webkit-text-stroke: 2px #eb3e97;
+	color: #ADDEE0;
+	margin-left: -5px;
+	height: 100px;
+	width: 207px;
+	}
+		
+.operator:hover{
+		background-color: #eb3e97;
+	color: #fff;
+		}
+		
+		
+.equals{
+		background-color: #fff;
+			position: relative;
+			float: right;
+			margin-top: -60px;
+			width: 160px;
+			height: 460px;
+	color: #eb3e97;
+	font-size: 40px;
+	}
+		
+.equals:hover{
+		background-color: #eb3e97;
+	color: #fff;
+		}
+		
+	
+		
+		
+		
+		
+</style>
+
+
+<body>
+	
+<div id="myCalculator">
+<form name="calculator">
+		
+
+	
+	
+	
+<div class="inputColumn">
+<input type="button" name="seven" value="7" class="seven"
+	   onclick="calculator.display.value +='7'">
+	
+<input type="button" name="four" value="4" class="four"
+	   onclick="calculator.display.value +='4'">
+	
+	<input type="button" name="four" value="1" class="one"
+	   onclick="calculator.display.value +='1'">
+	
+	<input type="button" name="decimal" value="." class="decimal"
+	   onclick="calculator.display.value +='.'">
+</div>
+	
+	<div class="inputColumn">
+<input type="button" name="eight" value="8" class="eight"
+	   onclick="calculator.display.value +='8'">
+	
+<input type="button" name="five" value="5" class="five"
+	   onclick="calculator.display.value +='5'">
+    
+	
+	<input type="button" name="two" value="2" class="two"
+	   onclick="calculator.display.value +='2'">
+	
+	<input type="button" name="zero" value="0" class="zero"
+	   onclick="calculator.display.value +='0'">
+</div>
+	
+	
+		<div class="inputColumn">
+<input type="button" name="eight" value="9" class="nine"
+	   onclick="calculator.display.value +='9'">
+	
+<input type="button" name="five" value="6" class="six"
+	   onclick="calculator.display.value +='6'">
+	
+	<input type="button" name="two" value="3" class="three"
+	   onclick="calculator.display.value +='3'">
+	
+	<input type="button" name="zero" value="clear" class="clear"
+	   onclick="calculator.display.value =''">
+</div>
+	
+	
+	
+			<div class="inputColumn">
+	<input type="button" name="divide" value="÷" class="operator"
+		onclick="calculator.display.value +='/'">
+	
+<input type="button" name="multiply" value="*" class="operator"
+		onclick="calculator.display.value +='*'">
+	
+	<input type="button" name="subtract" value="-" class="operator"
+		onclick="calculator.display.value +='-'">
+	
+	<input type="button" name="add" value="+" class="operator"
+		onclick="calculator.display.value +='+'">
+	
+	
+	</div>
+
+	
+	<div class="inputColumn">
+	
+
+		
+			<input type="button" name="equals" value="=" class="equals"
+	   onclick="calculator.display.value
+		= eval(calculator.display.value)">
+	
+	</div>
+	
+	
+	<div id="top_display">
+<input type="text" name="display" id="display" disabled>
+</div>
+	
+
+	
+
+</form>	</div>	
+</body>
+</html>
+
