@@ -10,21 +10,6 @@ body{
 background-color:#DB8383;
 }
 
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-
 .face{
 width:500px;
 height:560px;
@@ -163,10 +148,10 @@ margin-left:780px;
 	
 .Leyebrowcover{
 width:154px;
-height:42px;
+height:44px;
 background-color:#E8B9A6;
 position:absolute;
-border-radius:77px/21px;
+border-radius:77px/22px;
 z-index:30;
 margin-top:305px;
 margin-left:540px;
@@ -174,10 +159,10 @@ margin-left:540px;
 
 .Reyebrowcover{
 width:154px;
-height:42px;
+height:44px;
 background-color:#E8B9A6;
 position:absolute;
-border-radius:77px/21px;
+border-radius:77px/22px;
 z-index:30;
 margin-top:305px;
 margin-left:780px;
@@ -205,8 +190,8 @@ margin-top:350px;
 margin-left:830px;
 	
 animation-name:move;
-animation-duration: 3s;
-animation-delay:0s;
+animation-duration: 4s;
+animation-delay:0.8s;
 animation-iteration-count: infinite;
 }
 	
@@ -221,7 +206,7 @@ border-radius:30px;
 	
 25%{
 width:66px;
-height:24px;
+height:30px;
 background-color:#33231D;
 z-index:10;
 border-radius:33px/12px;
@@ -229,7 +214,7 @@ border-radius:33px/12px;
 	
 50%{
 width:70px;
-height:16px;
+height:24px;
 background-color:#33231D;
 position:fixed;
 z-index:10;
@@ -238,7 +223,7 @@ border-radius:35px/8px;
 	
 75%{
 width:66px;
-height:24px;
+height:30px;
 background-color:#33231D;
 z-index:10;
 border-radius:33px/12px;
@@ -265,57 +250,50 @@ margin-top:350px;
 margin-left:830px;
 	
 animation-name:move;
-animation-duration: 3s;
-animation-delay:0s;
+animation-duration:4s;
+animation-delay:0.8s;
 animation-iteration-count: infinite;
 }
 	
 @-webkit-keyframes move{
-0%{
-width:60px;
+0%{width:60px;
 height:60px;
 background-color:#33231D;
 z-index:10;
 border-radius:30px;
 margin-top:350px;
-margin-left:830px;
-}
+margin-left:830px;}
 	
-25%{
-width:66px;
+25%{width:66px;
 height:24px;
 background-color:#33231D;
 z-index:10;
 border-radius:33px/12px;
-}
+margin-top:370px;}
 	
-50%{
-width:70px;
+50%{width:80px;
 height:16px;
 background-color:#33231D;
 position:fixed;
 z-index:10;
-border-radius:35px/8px;
-}
+border-radius:40px/8px;
+margin-top:370px;
+transform:rotate(-5deg);}
 	
-75%{
-width:66px;
+75%{width:66px;
 height:24px;
 background-color:#33231D;
 z-index:10;
 border-radius:33px/12px;
-}	
+margin-top:370px;
+transform: none;}		
 	
-	
-100%{
-width:60px;
+100%{width:60px;
 height:60px;
 background-color:#33231D;
 z-index:10;
 border-radius:30px;
-}
-
-}
+margin-top:350px;}}
 	
 .mouth{
 width:126px;
@@ -340,36 +318,26 @@ margin-left:682px;
 
 	
 animation-name:mouth;
-animation-duration: 3s;
-animation-delay:0s;
+animation-duration: 4s;
+animation-delay:1s;
 animation-iteration-count: infinite;
 }
 	
 @-webkit-keyframes mouth{
-0%{
-margin-top:480px;
-margin-left:682px;
-}
-	
-25%{
-margin-top:500px;
-margin-left:682px;
-}
-	
-50%{
-margin-top:510px;
-margin-left:682px;
-}
-	
-75%{
-margin-top:500px;
+0%{margin-top:480px;
 margin-left:682px;}
 	
-100%{
-margin-top:480px;
-margin-left:682px;
-}
-}
+25%{margin-top:500px;
+margin-left:682px;}
+	
+50%{margin-top:510px;
+margin-left:682px;}
+	
+75%{margin-top:500px;
+margin-left:682px;}
+	
+100%{margin-top:480px;
+margin-left:682px;}}
 	
 .leftblink{
 width:34px;
@@ -393,8 +361,8 @@ margin-top:352px;
 margin-left:848px;
 	
 animation-name:disappear;
-animation-duration: 3s;
-animation-delay:0s;
+animation-duration:4s;
+animation-delay:0.8s;
 animation-iteration-count: infinite;
 }
 	
@@ -574,26 +542,33 @@ margin-top:325px;
 margin-left:1015px;
 }
 	
-	
-	
-	
-	
-	
-	
-	
-	
 
 	
 	
 	
+.head{
+margin-top:50px;
+margin-left:80px;
+animation-name:tilted;
+animation-duration: 4s;
+animation-delay:0.3s;
+animation-iteration-count:infinite;
+}
 	
+@-webkit-keyframes tilted{
+0%{transform: none;}
+25{transform:rotate(10deg);}
+50%{transform:rotate(0deg);}
+75%{transform:rotate(10deg);}		
+100%{transform: none;}
+}
 	
 	
 </style>
 	
 
 <body>
-
+<div class="head">
 	
 <div class="ear"></div>
 <div class="leftear"></div>
@@ -635,10 +610,10 @@ margin-left:1015px;
 <div class="Lsmallblink"></div>
 <div class="RAsmallblink"></div>
 <div class="RBsmallblink"></div>
-<div class="RCsmallblink"></div>
-	
-	
-	
+<div class="RCsmallblink"></div>	
+</div>	
+<div class="bgl"></div>	
+<div class="bgr"></div>
 	
 	
 	
