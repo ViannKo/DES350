@@ -1,0 +1,415 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>National Park website</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+<style>
+
+body{
+font-family:'Open Sans Condensed', sans-serif;
+width:90%;
+padding-top:1%;
+max-width: 1500px;
+background:no-repeat;
+background-image:url("bgggg.jpg");
+height:100%;
+}
+	
+.est{
+font-size:50px;
+font-weight:800;
+font-style:bold;
+color: #70a58c;
+opacity: 80%;
+top: 670px;
+right:320px;
+margin-top:60px;
+margin-bottom:-50px;
+position: absolute;
+z-index:-60;
+}
+	
+.year{
+font-size:120px;
+font-weight:800;
+color: #70a58c;
+opacity: 80%;
+top:730px;
+right:10px;
+padding-top:-50px;
+margin-right:80px;
+position:absolute;
+z-index:-60;
+}
+
+.nationalpark{
+font-size:150px;
+font-weight:900;
+color:#d35822;
+top:430px;
+position:absolute;
+margin-left:80px;
+margin-top:120px;
+z-index:-60;
+width:1000px;
+}
+	
+
+.latitude{
+font-size:30px;
+font-weight:500;
+color:#776444;
+width:500px;
+left:1100px;
+position:fixed;
+margin-right:30px;	
+z-index:-30;
+}
+	
+.description{
+font-size:20px;
+font-weight:200;
+font-kerning: 30px;
+color:#354740;
+margin-left:80px;
+width:90%;
+top:900px;
+padding-top:100px;
+position:absolute;
+}
+	
+.paragraph{
+font-size:32px;
+font-kerning:28px;}
+	
+.wtd{
+font-size:40px;
+font-weight:600;
+margin-top:80px;
+color:#354740;
+
+}
+	
+.activities{
+font-size:40px;
+font-weight:600;
+color:#3e1a13;
+font-kerning:200;
+top:1400px;
+position:absolute;
+left:80px;}
+	
+.hiking{
+margin-left:0px;
+margin-top:60px;
+z-index:-30;}	
+	
+.parah{
+font-size:30px;
+font-weight:400;
+margin-top:5px;
+width:60%;
+z-index:-30;}
+	
+.pawh{
+z-index:-50;
+opacity: 40%;
+margin-top:1500px;
+}
+	
+.titlec{
+margin-left:280px;
+margin-top:100px;
+z-index:-30;}
+	
+.parac{
+font-size:30px;
+font-weight:400;
+margin-left:280px;
+margin-top:5px;
+width:50%;
+z-index:-30;}
+
+.pawc{
+z-index:-50;
+opacity: 40%;
+margin-top:80px;
+margin-left:280px;
+}
+	
+.titlef{
+margin-top:100px;
+margin-left:650px;
+z-index:-30;}	
+	
+.paraf{
+font-size:30px;
+font-weight:400;
+margin-top:5px;
+margin-left:650px;
+width:50%;
+z-index:-30;}
+
+.pawf{
+z-index:-50;
+opacity: 40%;
+margin-top:85px;
+margin-left:650px;}
+	
+.titlew{
+margin-top:100px;
+margin-left:60px;
+z-index:-30;}
+	
+.paraw{
+font-size:30px;
+font-weight:400;
+margin-top:5px;
+margin-left:60px;
+width:50%;
+z-index:-30;}
+	
+.paww{
+z-index:-50;
+opacity: 40%;
+margin-top:120px;
+margin-left:60px;
+}
+	
+.titleb{
+margin-top:150px;
+margin-left:600px;
+z-index:-30;}
+	
+.parab{
+font-size:30px;
+font-weight:400;
+margin-top:5px;
+margin-left:600px;
+width:50%;
+z-index:-30;}
+	
+.pawb{
+z-index:-50;
+opacity: 40%;
+margin-top:185px;
+margin-left:600px;}
+	
+.tree{
+position:absolute;
+top:560px;
+left:1100px;
+z-index:-60;}	
+	
+.mountain{
+top:30px;
+position:absolute;
+z-index:-50;}	
+	
+.river{
+z-index:-70;
+position:absolute;
+top:375px;
+left:180px;}
+
+.stone{
+z-index:-60;
+position:absolute;
+top:1890px;
+left:240px;
+transform:rotate(25deg);
+opacity:95;}
+	
+.bear{
+z-index:-50;
+position:absolute;
+top:2690px;
+left:780px;
+}
+	
+
+.visit{
+font-size:80px;
+font-weight:900;
+color:#d34790;
+margin-top:450px;
+margin-left:60px;
+z-index:-20;
+}	
+
+
+.button{
+width:560px;
+height:110px;
+background-color:#fdcea2;
+border-radius:40px 40px;
+z-index:90;
+margin-left:-50px;
+margin-top:-114px;
+}
+
+.button:hover{
+background-color:fffff;}
+
+.info{
+font-size:40px;
+font-weight:600;
+margin-left:100px;
+margin-top:90px;
+margin-bottom:25px;
+color:#354740;
+}
+	
+.squareElement{
+display: inline-block;
+float:left;
+background: #ddd;
+text-align: center;
+line-height:205px;
+width:29%;
+margin-right:1%;
+margin-bottom:5%; 
+margin-left:20px;
+height:405px;
+border-radius:9px;
+}
+	
+.posterone{
+margin-left:100px;
+float:left;}
+
+.postertwo{
+left:900px;
+float:left;
+margin-left:200px;}
+
+.posterthree{
+float:left;
+left:1700px;
+margin-left:200px;
+}
+	
+.link{
+font-size:40px;
+font-weight:400;
+color:#354740;
+width:80%;
+height:200px;
+float:left;
+margin-left:485px;
+margin-top:200px;
+color:#294749;
+}
+</style>
+
+	
+<body>
+
+<div class="tree"><img src="treeee.png" width="656" height="378" alt=""/></div>
+
+<div class="mountain">
+<div class="mountain rellax" data-rellax-speed="12">
+<img src="mountainnn.png" width="1720" height="790" alt=""/></div>
+</div>
+	
+<div class="nationalpark">Grand Teton National Park</div>
+<div class="park rellax" data-rellax-speed="16"></div>
+<div class="est">EST</div>
+<div class="est rellax" data-rellax-speed="5"></div>
+<div class="year">1929</div>
+<div class="year rellax" data-rellax-speed="5"></div>
+<div class="latitude">43.7904°N, 110.6818°W Wyoming, United States</div>
+<div class="description">
+<h1>Overwhelming mountains scenes with extraordinary wildlife creatures, all can be found in the Grand Teton National Park.</h1>
+<div class="paragraph"><p>The park was originally built to preserve the Teton Range and several lakes at the foot of the mountains, until now, the total area of the Park has been expanded to 210,000 acres. There are different sections in the park, from the mountains to the lakes allow you to enjoy a large variety of activities with your family and friends. Knowing that the Grand Teton National Park is named after the Teton Range, visitors from all over the world can be joining our hiking trail and take a peek at this amazing scene created by our mother nature. Let's start planning your next trip!
+</p></div>
+</div>
+	
+
+<div class="activities">
+<div class="wtd">
+<u>What to do in Grand Teton</u>
+</div>
+
+<div class="hiking">
+<div class="titleh">Hiking</div>
+<div class="parah">Hiking in Grand Teton is fun but it can also be challenging due to the rugged nature of the landscape. Stop by our visitor center for weather conditions.</div>
+</div>
+	
+
+<div class="camping">
+<div class="titlec">Camping</div>
+<div class="parac">The backcountry is a great place to explore in the park throughcamping, however, advanced planning is needed.</div>
+</div>
+	
+
+<div class="fishing">
+<div class="titlef">Fishing</div>
+<div class="paraf">Many visitors come to enjoy this popular yet unforgettable fishing experience in Great Tteon National Park. Fishing activity is regulated by Wyoming state law and licenses are required. </div>
+</div>
+
+<div class="wildlife Viewing">
+<div class="titlew">Wildlife Viewing</div>
+<div class="paraw">Grand Teton is home to a wide variety of wild animals. Grizzly, black bear, moose , pronghor and many more live throughout the park. Always keep a safe distance when viewing wildlife! </div>
+</div>
+	
+
+<div class="boating & Floating">
+<div class="titleb">Boating & Floating</div>
+<div class="parab">There are different opportunities for visitors enjoying water in the park. Many more lakes are accessible for a variety of activities.</div>
+</div>
+</div>
+	
+<div class="pawh"><img src="paw.png" width="177" height="154" alt=""/></div>
+<div class="pawc"><img src="paw.png" width="177" height="154" alt=""/></div>
+<div class="pawf"><img src="paw.png" width="177" height="154" alt=""/></div>
+<div class="paww"><img src="paw.png" width="177" height="154" alt=""/></div>	
+<div class="pawb"><img src="paw.png" width="177" height="154" alt=""/></div>	
+	
+<div class="visit">VISIT NOW!</div>
+<div class="button"></div>
+	
+	
+<div class="bear"><img src="bear.png" width="909" height="917"alt=""/></div>
+<div class="stone"><img src="rock.png" width="758" height="764"alt=""/></div>
+<div class="river"><img src="river.png" width="1630" height="2207"alt=""/></div>
+<div class="info"><u>More Fun Trips</u></div>
+<div class="otherposter">
+<div class="posterone">
+<a href="https://geo-ags.github.io/DES350/posterSite.html"><img src="poster.gif" width="317" height="490" alt=""/></a>
+</div>
+	
+<div class="postertwo">
+<a href="https://maywalan.github.io/DES350/National-Park.html"><img src="02.gif" width="317" height="490" alt=""/></a>
+</div>
+	
+<div class="posterthree">
+<a href="https://djrobles.github.io/DES350/Acadia.html"><img src="Acadia.gif" width="317" height="490" alt=""/></a>
+</div>
+</div>
+	
+<div class="link">
+<div class="cite"><a href="https://www.nps.gov/grte/index.htm" >All information collected from www.nps.gov.</a></div>
+</div>
+
+	
+<script type="text/javascript" src="rellax.js"></script>
+<script type="text/javascript" src="option.js"></script>
+<script>
+var rellax = new Rellax('.rellax', {
+  // center: true
+ callback: function (position) {
+ // callback every position change
+ console.log(position);
+  },
+ breakpoints: [576, 768, 1024]
+  });
+</script>
+
+	
+</body>
+</html>
